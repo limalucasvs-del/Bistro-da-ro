@@ -1,0 +1,62 @@
+h1 {
+    color: darkolivegreen;
+    text-align: center;
+}
+
+.logo {
+    width: 300px;
+    height: auto;
+    justify-content: center;
+    margin-top: 0px;
+    align-items: center;
+    
+    
+}
+
+body {
+    background-color: #fdf6e6;
+}
+
+
+.child{
+    display: Flex;
+    padding: 20px;
+    width: 50%;
+    margin: auto;
+   
+}
+
+.menu{
+    width:100%;
+}
+
+.menu th:first-child,
+.menu td:first-child{
+    text-align:left;
+}
+
+.menu th:last-child,
+.menu td:last-child {
+    text-align:right;
+}
+
+.botoes{
+    display: Flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-decoration: none;
+    width: 100%;
+   ;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
