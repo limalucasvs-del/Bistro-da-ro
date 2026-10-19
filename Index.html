@@ -6,164 +6,121 @@
            
         <link rel="stylesheet" href="style.css">
 
-            
+        <div class="parent">
+            <div class="child">
+                <img src="Bistro.png" alt="Logo" class="logo">
+            </div>
+        </div>
 
-        
+        <div class="botoes">
+            <a href="#quem somos"><h1>Quem Somos</h1></a>
+            <a href="#nosso menu"><h1>Nosso menu</h1></a>
+            <a href="#reserve agora"><h1>Reserve agora</h1></a>
+            
+        </div>
         
     </head>
 
     <body>
-        <!--Cabeçalho-->
-        <header class ="cabecalho">         
-            <img src="Bistro.png" alt="Logo" class="logo">
-            
-            <nav class="botoes">
-                <a href="#quem somos">Quem Somos</a>
-                <a href="#nossa chef">Nossa Chef</a>
-                <a href="#nosso menu">Nosso menu</a>
-                <a href="#reserve agora">Reserve agora</a>
-            
-            </nav>          
-        </header>
+        <div><section id="quem somos"><h1>Quem somos</h1></section></div>
+        <div class="row">
+                <section id="nosso menu"><h1>Nosso menu</h1></section>
+        </div>
 
-        <section id="quem somos"><h1>Quem somos</h1></section>
-            <div class="historia">
-                <p>
-                        Há três anos, nasceu o Bistrô da Rô, um lugar onde a paixão pela gastronomia italiana 
-                    se transforma em experiências cheias de sabor, carinho e tradição.<br>
-                </p>
-                <p>
-                        Inspirado pelos encantos da Itália, nosso restaurante tem como propósito levar à mesa 
-                    pratos que despertam memórias, aproximam pessoas e tornam cada refeição um momento especial. 
-                    Valorizamos os ingredientes de qualidade, o cuidado em cada preparo e a combinação de sabores 
-                    que fazem da culinária italiana uma das mais apreciadas do mundo.<br>
-                </p>
-                <p> 
-                    Ao longo desses três anos, construímos nossa história com dedicação, amor pela cozinha e o desejo 
-                    de proporcionar aos nossos clientes muito mais do que uma refeição: uma experiência acolhedora, 
-                    saborosa e inesquecível. <br>
-                </p>
-                <p>   
-                    No Bistrô da Rô, cada prato é preparado com atenção aos detalhes e servido com o carinho que transforma 
-                    uma simples visita em vontade de voltar. <br>
-                </p>
-                <p>   
-                    Bistrô da Rô — a tradição italiana servida com amor, sabor e um toque especial de casa.
-                </p>
-            </div>
-          
-        <section id="nossa chef"><h1>Nossa chef</h1></section>
-        
-        <div class="conteudo">
-            <div class="parent">
-                <img src="chef.png" alt="chef" class="child">
+        <table class="menu">
+            <thread>
+                <tr>
+                    <th><h2>Entradas</h2></th>
+                    <th><h2></h2></th>
+                </tr>
+            </thread>
+            <tbody>
+                <tr>
+                    <td>
+                        <h3>Salada Caprese</h3>
+                        <p>Salada de tomate fresco, Mussarela de búfala e folhas de manjericão, temperado com azeite e sal</p>
+                    </td>
+                    <td>
+                        <h3>R$35</h3>                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Brusqueta</h3>
+                        <p>Pão selado no azeite com tomate, mussarela de búfala, azeite e folhas de manjericão</p>
+                    </td>
+                    <td>
+                        <h3>R$30</h3>                        
+                    </td>
+                </tr>
+            </tbody>
+            <thread>
+                <tr>
+                    <th>
+                        <h2>Prato principal</h2>
+                    </th>
+                    <th>
+                        <h2></h2>
+                    </th>
+                </tr>
+            </thread>
+            <tbody>
+                <tr>
+                    <td>
+                        <h3>Sabor da Toscana</h3>
+                        <p>Filé mignon ao molho madeira acompanhado de risoto de aspargos</p>
+                    </td>
+                    <td>
+                        <h3>R$85</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Nhoque della Nonna</h3>
+                        <p>Nhoque de batata acompanhado com ragu de ossobuco</p>
+                    </td>
+                    <td>
+                        <h3>R$75</h3>
+                    </td>
+                </tr>
+            </tbody>
+             <thread>
+                <tr>
+                    <th>
+                        <h2>Sobremesas</h2>
+                    </th>
+                    <th>
+                        <h2></h2>
+                    </th>
+                </tr>
+            </thread>
+            <tbody>
+                <tr>
+                    <td>
+                        <h3>Doce encontro mineiro</h3>
+                        <p>Suflê de goiabada com requeijão cremoso</p>
+                    </td>
+                    <td>
+                        <h3>R$40</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Banana Flambé</h3>
+                        <p>Banana flambada com gelato de creme</p>
+                    </td>
+                    <td>
+                        <h3>R$55</h3>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <section id="reserve agora"><h1>Reserve Agora</h1></section>
             </div>
         </div>
 
-        <!--Nosso menu-->
-        
-        <section id="nosso menu"><h1>Nosso menu</h1></section>
-
-        <h2>Entradas</h2></th>
-
-        <div class="cardapio">
-            <!-- Salada Caprese -->
-            <div class="prato">
-                <img src="Salada caprese.png" alt="Salada Caprese">
-
-                <div class="informacoes">
-                    <h3>Salada Caprese</h3>
-
-                    <p>
-                        Tomates frescos, mussarela de búfala, folhas de manjericão e azeite.
-                    </p>
-
-                    <span class="preco">R$ 35,00</span>
-                </div>
-            </div>
-
-            <!-- Brusqueta -->
-            <div class="prato">
-                <img src="Brusqueta.png" alt="Brusqueta">
-
-                <div class="informacoes">
-                    <h3>Brusqueta</h3>
-
-                    <p>
-                        Pão tostado no azeite, tomate, mussarela de búfala e manjericão.
-                    </p>
-
-                    <span class="preco">R$ 30,00</span>
-                </div>
-            </div>
-
-        </div>                     
-        
-        <h2>Prato Principal</h2>    
-
-        <div class="cardapio">
-            <!--Sabor da Toscana-->
-            <div class="prato">
-                <img src="Sabor da toscana.png" alt="sabor da toscana">
-                <div class="informacoes">
-                    <h3>Sabor da Toscana</h3>
-
-                    <p>
-                       Filé mignon ao molho madeira acompanhado de risoto de aspargos 
-                    </p>
-
-                    <span class="preco">R$ 85,00</span>
-                </div>
-            </div>
-            <div class="prato">
-                <img src="Nhoque della nonna.png" alt="Nhoque della Nonna">
-                <div class="informacoes">
-                    <h3>Nhoque della Nonna</h3>
-
-                    <p>
-                       Nhoque de batata acompanhado com ragu de ossobuco 
-                    </p>
-
-                    <span class="preco">R$ 75,00</span>
-                </div>
-            </div>
-        </div>       
-                    
-        <h2>Sobremesas</h2>
-
-        <div class="cardapio">
-            <!--Doce encontro Mineiro-->
-            <div class="prato">
-                <img src="Doce encontro mineiro.png" alt="Doce encontro mineiro">
-                <div class="informacoes">
-                    <h3>Doce encontro mineiro</h3>
-
-                    <p>
-                       Suflê de goiabada com requeijão cremoso 
-                    </p>
-
-                    <span class="preco">R$ 40,00</span>
-                </div>
-            </div>
-            <!--Banana Flambé-->
-            <div class="prato">
-                <img src="Banana flambe.png" alt="Banana Flambê">
-                <div class="informacoes">
-                    <h3>Banana Flambé</h3>
-
-                    <p>
-                       Banana flambada com gelato de creme 
-                    </p>
-
-                    <span class="preco">R$ 50,00</span>
-                </div>
-            </div>
-        </div>                     
-    
-    <!--Reverve agora-->
-
-    <section id="reserve agora"><h1>Reserve Agora</h1></section>
-            
     </body>
 
 
