@@ -1,2 +1,2 @@
 # Bistro-da-ro
-Site de restaurante desenvolvido com HTML e CSS
+Esse site de restaurante foi desenvolvido somente com HTML e CSS para estudo e aplicações práticas.
