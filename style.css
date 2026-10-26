@@ -113,6 +113,7 @@ section {
     height: 200px;
     object-fit: cover;
     border-radius: 10px;
+    padding: 20px
 }
 
 /* Informações à direita da imagem */
@@ -187,7 +188,7 @@ section {
 
 .redes{
     display:inline;
-    text-align: justify
+    text-align: justify;
 }
 
 .redelogo {
@@ -199,4 +200,13 @@ section {
 
 html {
     scroll-behavior: smooth;
+}
+
+/*Transformando para celular */
+@media (max-width: 600px){
+    .prato{
+        flex-direction: column;
+        width: 100%;
+    }
+    
 }
