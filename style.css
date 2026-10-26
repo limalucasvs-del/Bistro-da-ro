@@ -44,8 +44,10 @@ body {
 
 .botoes{
     display: flex;
-    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;   
+    gap: 20px;
     color: olive;
     }
 
@@ -66,11 +68,13 @@ body {
 .cabecalho{
     display: flex;
     justify-content: space-between;
-    align-items: top;
+    align-items: center;
+    gap: 20px;
     padding: 20px 40px;
     background-color: #fdf6e6;
     position: sticky;
     top: 0;   
+    z-index: 1000; /*ajuda a manter o cabeçalho sobre o conteúdo*/
     border-bottom: solid 1px olive;
 
 
@@ -90,7 +94,7 @@ section {
 /* Área que contém os dois pratos */
 .cardapio {
     display: flex;
-    gap: 30px;
+    gap: 20px;
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
@@ -114,7 +118,6 @@ section {
     height: auto;
     object-fit: cover;
     border-radius: 10px;
-    box-sizing: border-box;
 }
 
 /* Informações à direita da imagem */
@@ -146,11 +149,14 @@ section {
 
 /*Quem somos*/
 .historia {
-    margin: 80px;
-    font-size:22px;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 30px;
+    box-sizing: border-box;
+    font-size: 22px;
+    line-height: 1.7;
     text-align: justify;
     text-indent: 30px;
-    padding-left: 30px;
 }
 
 .conteudo {
@@ -160,20 +166,22 @@ section {
     max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
+    box-sizing: border-box;
 }
 
 .conteudoimg {
     width: 320px;
+    max-width: 100%;
     height: auto;
     object-fit: cover;
-    border-right: solid 1px olive;
 }
 
 .texto {
     flex: 1;
+    min-width: 0;
     text-align: justify;
     font-size: 22px;
-
+    line-height: 1.6;
 }
 
 .conteudo h2 {
@@ -203,44 +211,63 @@ html {
     scroll-behavior: smooth;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #fdf6e6;
+}
+
 /*Transformando para celular */
 @media (max-width: 600px) {
 
-        .cabecalho {
+    .cabecalho {
         flex-direction: column;
-        gap: 15px;
-        padding: 15px;
+        gap: 10px;
+        padding: 10px;
     }
 
+    .logo {
+        width: 120px;
+        max-width: 100%
+        }
+
     .botoes {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
+        width: 100%;
+        gap: 12px;
     }
 
     .botoes a {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .conteudo {
         flex-direction: column;
+        align-items: center;
+        gap: 20px;
         padding: 15px;
     }
 
     .conteudoimg {
         width: 100%;
-        max-width: 320px;
+        max-width: 280px;
         border-right: none;
     }
 
     .historia {
-        margin: 20px;
-        padding-left: 0;
-        font-size: 17px;
+        width: 100%;
+        margin: 20px auto;
+        padding: 0 18px;
+        font-size: 16px;
+        line-height: 1.6;
+        text-indent: 20px;
     }
 
-    .texto {
-        font-size: 17px;
+     .texto {
+        width: 100%;
+        font-size: 16px;
     }
 
     section {
@@ -265,13 +292,13 @@ html {
     .prato img {
         width: 100%;
         max-width: 300px;
-        height: auto;
-        padding: 0;
+        
     }
 
     /* Informações do prato */
     .informacoes {
         width: 100%;
+        overflow-wrap: break-word;
     }
 
     .informacoes h2 {
@@ -280,5 +307,23 @@ html {
 
     .informacoes p {
         font-size: 14px;
+    }
+
+     .localizacao {
+        width: 100%;
+        box-sizing: border-box;
+        border-right: none;
+        border-bottom: 1px solid olive;
+        padding: 0 0 15px;
+        text-align: center;
+    }
+
+    .redes {
+        text-align: center;
+    }
+
+    .redelogo {
+        display: inline-block;
+        vertical-align: middle;
     }
 }
